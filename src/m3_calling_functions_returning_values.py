@@ -32,7 +32,7 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # ------------------------------------------------------------------
 
-    # m3t_tester.main()
+    m3t_tester.main()
 
 
 def run_test_sum_of_digits():
@@ -96,6 +96,7 @@ def run_test_sum_of_digits():
     answer = sum_of_digits(147)
     print('Test 5 expected:', expected)
     print('Actual:', answer)
+
 
 def sum_of_digits(number):
     """
@@ -198,7 +199,7 @@ def digits_in_cube(n):
     # ------------------------------------------------------------------
 
     m = n ** 3
-    return(sum_of_digits(m))
+    return sum_of_digits(m)
 
 
 def run_test_digits_in_power():
@@ -255,13 +256,13 @@ def digits_in_power(n, k):
     # ------------------------------------------------------------------
 
     x = n ** k
-    return(sum_of_digits(x))
+    return sum_of_digits(x)
 
 
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement this function.
+    # DONE: 7. Implement this function.
     #   It TESTS the  fancy_sums_of_digits  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -333,9 +334,10 @@ def fancy_sums_of_digits(n):
     ####################################################################
     # ------------------------------------------------------------------
 
-    X = n ** 1000
-    Y = n ** 999
-    return(sum_of_digits(X ** Y))
+    x = n ** 1000
+    y = n ** 999
+    return sum_of_digits(x ** y)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
