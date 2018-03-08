@@ -161,7 +161,7 @@ def even_better_draw_circles(n, k, center, color, speed):
 def run_test_even_better_draw_circles():
     print()
     print('--------------------------------------------------')
-    print('Testing  better_draw_circles:  See graphics window')
+    print('Testing  even_better_draw_circles:  See graphics window')
     print('--------------------------------------------------')
     even_better_draw_circles(5, 10, rg.Point(235, 342), 'aquamarine', 0.05)
     even_better_draw_circles(7, 30, rg.Point(400, 400), 'red', 0.01)
